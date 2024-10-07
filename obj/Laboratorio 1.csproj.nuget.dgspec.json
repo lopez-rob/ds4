@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rob/ds4/ds4/Laboratorio 1/Laboratorio 1.csproj": {}
+    "/Users/rob/ds4/Laboratorio 1.csproj": {}
   },
   "projects": {
-    "/Users/rob/ds4/ds4/Laboratorio 1/Laboratorio 1.csproj": {
+    "/Users/rob/ds4/Laboratorio 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rob/ds4/ds4/Laboratorio 1/Laboratorio 1.csproj",
+        "projectUniqueName": "/Users/rob/ds4/Laboratorio 1.csproj",
         "projectName": "Laboratorio 1",
-        "projectPath": "/Users/rob/ds4/ds4/Laboratorio 1/Laboratorio 1.csproj",
+        "projectPath": "/Users/rob/ds4/Laboratorio 1.csproj",
         "packagesPath": "/Users/rob/.nuget/packages/",
-        "outputPath": "/Users/rob/ds4/ds4/Laboratorio 1/obj/",
+        "outputPath": "/Users/rob/ds4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rob/.nuget/NuGet/NuGet.Config"
