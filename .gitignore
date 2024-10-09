@@ -1,0 +1,58 @@
+# Build results
+bin/
+obj/
+
+# VS 2019/2022 cache and settings folders
+.vs/
+*.user
+*.suo
+
+# Auto-generated files
+*.sln.docstates
+*.csproj.user
+
+# Visual Studio Code workspace and settings files
+.vscode/
+
+# SQL Server-generated files
+*.mdf
+*.ldf
+
+# Log files
+*.log
+
+# User-specific files
+*.rsuser
+*.sln.ide
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Files built by Visual Studio
+*.dll
+*.exe
+*.pdb
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.pri
+
+# NUGET packages
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider IDE files
+.idea/
+.idea/workspace.xml
+.idea/.idea/workspace.xml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
