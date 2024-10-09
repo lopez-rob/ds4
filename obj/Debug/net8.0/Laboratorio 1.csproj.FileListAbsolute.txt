@@ -1,0 +1,15 @@
+/Users/rob/ds4/ds4/Laboratorio 1/bin/Debug/net8.0/Laboratorio 1
+/Users/rob/ds4/ds4/Laboratorio 1/bin/Debug/net8.0/Laboratorio 1.deps.json
+/Users/rob/ds4/ds4/Laboratorio 1/bin/Debug/net8.0/Laboratorio 1.runtimeconfig.json
+/Users/rob/ds4/ds4/Laboratorio 1/bin/Debug/net8.0/Laboratorio 1.dll
+/Users/rob/ds4/ds4/Laboratorio 1/bin/Debug/net8.0/Laboratorio 1.pdb
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.AssemblyInfoInputs.cache
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.AssemblyInfo.cs
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.csproj.CoreCompileInputs.cache
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.sourcelink.json
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.dll
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/refint/Laboratorio 1.dll
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.pdb
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/Laboratorio 1.genruntimeconfig.cache
+/Users/rob/ds4/ds4/Laboratorio 1/obj/Debug/net8.0/ref/Laboratorio 1.dll
