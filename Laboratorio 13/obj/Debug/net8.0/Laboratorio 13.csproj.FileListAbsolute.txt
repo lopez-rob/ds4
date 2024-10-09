@@ -1,0 +1,5 @@
+/Users/rob/ds4/Laboratorio 13/Laboratorio 13/obj/Debug/net8.0/Laboratorio 13.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rob/ds4/Laboratorio 13/Laboratorio 13/obj/Debug/net8.0/Laboratorio 13.AssemblyInfoInputs.cache
+/Users/rob/ds4/Laboratorio 13/Laboratorio 13/obj/Debug/net8.0/Laboratorio 13.AssemblyInfo.cs
+/Users/rob/ds4/Laboratorio 13/Laboratorio 13/obj/Debug/net8.0/Laboratorio 13.csproj.CoreCompileInputs.cache
+/Users/rob/ds4/Laboratorio 13/Laboratorio 13/obj/Debug/net8.0/Laboratorio 13.sourcelink.json
