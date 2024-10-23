@@ -1,0 +1,24 @@
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto__1.Form1.resources
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.csproj.GenerateResource.cache
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.AssemblyInfoInputs.cache
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.AssemblyInfo.cs
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.csproj.CoreCompileInputs.cache
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.csproj.AssemblyReference.cache
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\Proyecto #1.exe
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\Proyecto #1.deps.json
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\Proyecto #1.runtimeconfig.json
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\Proyecto #1.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\Proyecto #1.pdb
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto.AA779AA4.Up2Date
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\refint\Proyecto #1.dll
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.pdb
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\Proyecto #1.genruntimeconfig.cache
+C:\Users\rlope\source\repos\Proyecto #1\Proyecto #1\obj\Debug\net8.0-windows\ref\Proyecto #1.dll
