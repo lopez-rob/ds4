@@ -1,0 +1,14 @@
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\bin\Debug\net8.0\Laboratorio 4.exe
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\bin\Debug\net8.0\Laboratorio 4.deps.json
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\bin\Debug\net8.0\Laboratorio 4.runtimeconfig.json
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\bin\Debug\net8.0\Laboratorio 4.dll
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\bin\Debug\net8.0\Laboratorio 4.pdb
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.AssemblyInfoInputs.cache
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.AssemblyInfo.cs
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.csproj.CoreCompileInputs.cache
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.dll
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\refint\Laboratorio 4.dll
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.pdb
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\Laboratorio 4.genruntimeconfig.cache
+C:\Users\rlope\source\repos\Laboratorio4\Laboratorio 4\obj\Debug\net8.0\ref\Laboratorio 4.dll
