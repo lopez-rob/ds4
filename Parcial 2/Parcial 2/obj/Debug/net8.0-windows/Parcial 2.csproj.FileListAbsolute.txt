@@ -1,0 +1,16 @@
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\bin\Debug\net8.0-windows\Parcial 2.exe
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\bin\Debug\net8.0-windows\Parcial 2.deps.json
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\bin\Debug\net8.0-windows\Parcial 2.runtimeconfig.json
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\bin\Debug\net8.0-windows\Parcial 2.dll
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\bin\Debug\net8.0-windows\Parcial 2.pdb
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial_2.Form1.resources
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.csproj.GenerateResource.cache
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.AssemblyInfoInputs.cache
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.AssemblyInfo.cs
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.csproj.CoreCompileInputs.cache
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.dll
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\refint\Parcial 2.dll
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.pdb
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\Parcial 2.genruntimeconfig.cache
+C:\Users\rlope\source\repos\Parcial 2\Parcial 2\obj\Debug\net8.0-windows\ref\Parcial 2.dll
