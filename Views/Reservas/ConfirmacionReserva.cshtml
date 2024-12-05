@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Confirmación de Reserva</h1>
+
+<div>
+    <h3>Detalles de la Reserva</h3>
+    <p><strong>Habitación:</strong> @Model.RoomName</p>
+    <p><strong>Precio por noche:</strong> $@Model.RoomPrice</p>
+    <p><strong>Noches:</strong> @Model.Nights</p>
+    <p><strong>Precio Total:</strong> $@Model.TotalPrice</p>
+</div>
+
+<!-- Botón para imprimir -->
+<div>
+    <button onclick="window.print()">Imprimir Confirmación</button>
+</div>

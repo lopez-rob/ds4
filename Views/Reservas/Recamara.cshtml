@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <main role="main" class="pb-3">
+        <h1>Seleccionar Recámara</h1>
+
+        <!-- Habitaciones del Hotel El Panamá -->
+        <h3>Habitaciones disponibles en El Panamá</h3>
+        <p>Selecciona una habitación del hotel.</p>
+
+        <!-- Recámara Estándar -->
+        <h4>Recámara Estándar</h4>
+        <div class="room-image-description">
+            <div class="room-container d-flex">
+                <div id="carouselEstandar" class="carousel slide w-50" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Assets/estandar1.jpg" class="d-block w-100" alt="Estándar 1">
+                        </div>
+                        <!-- Agregar más imágenes aquí si lo deseas -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstandar" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEstandar" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="description w-50 ms-4">
+                    <p class="room-description">Cama Queen, baño privado, amenities premium, vista al jardín.</p>
+                    <ul>
+                        <li>Amenidades: Wifi, TV, Aire acondicionado, Nevera, Caja de seguridad</li>
+                        <li>Tamaño: 25m²</li>
+                        <li>Vista: piscina</li>
+                        <li>Precio por noche: <span class="room-price">$85</span></li>
+                        <li>Calificación: <span class="star-rating">★★★★☆ (4.7)</span></li>
+                    </ul>
+                    <input type="checkbox" id="selectEstandar" value="Estandar" class="room-select">
+                    <label for="selectEstandar">Seleccionar esta habitación</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recámara Individual -->
+        <h4>Recámara Individual</h4>
+        <div class="room-image-description">
+            <div class="room-container d-flex">
+                <div id="carouselIndividual" class="carousel slide w-50" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Assets/individual5.jpg" class="d-block w-100" alt="Individual 5">
+                        </div>
+                        <!-- Agregar más imágenes aquí si lo deseas -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndividual" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndividual" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="description w-50 ms-4">
+                    <p class="room-description">Cama individual, baño privado, amenities básicos, vista al mar.</p>
+                    <ul>
+                        <li>Amenidades: Wifi, TV, Aire acondicionado, Nevera, Caja de seguridad</li>
+                        <li>Tamaño: 18m²</li>
+                        <li>Vista: jardín</li>
+                        <li>Precio por noche: <span class="room-price">$55</span></li>
+                        <li>Calificación: <span class="star-rating">★★★☆☆ (4.2)</span></li>
+                    </ul>
+                    <input type="checkbox" id="selectIndividual" value="Individual" class="room-select">
+                    <label for="selectIndividual">Seleccionar esta habitación</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón de Finalizar Booking -->
+        <div class="text-center mt-5">
+            <button class="btn btn-primary" id="finishBooking">Finalizar Reserva</button>
+        </div>
+    </main>
+</div>
+
+<!-- Modal de Confirmación -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel">Resumen de Reserva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="modalRoom"></p>
+                <p id="modalPrice"></p>
+                <p id="modalTotal"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Confirmar Reserva</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+       document.getElementById("finishBooking").addEventListener("click", function () {
+        // Obtener las habitaciones seleccionadas
+        var selectedRoom = "";
+        var roomPrice = 0;
+
+        if (document.getElementById("selectEstandar").checked) {
+            selectedRoom = "Recámara Estándar";
+            roomPrice = 85; // Precio de la Recámara Estándar
+        } else if (document.getElementById("selectIndividual").checked) {
+            selectedRoom = "Recámara Individual";
+            roomPrice = 55; // Precio de la Recámara Individual
+        } else {
+            alert("Por favor, selecciona una habitación.");
+            return;
+        }
+
+        // Pedir la cantidad de noches
+        var nights = prompt("¿Cuántas noches se va a quedar?", "1");
+
+        if (!nights || isNaN(nights) || nights <= 0) {
+            alert("Por favor, ingresa un número válido de noches.");
+            return;
+        }
+
+        // Calcular el presupuesto total
+        var totalPrice = roomPrice * nights;
+
+        // Redirigir a la página de confirmación con los detalles
+        window.location.href = '/Reservation/FinalizeReservation?roomName=' + selectedRoom + '&roomPrice=' + roomPrice + '&nights=' + nights;
+    });
+
+</script>

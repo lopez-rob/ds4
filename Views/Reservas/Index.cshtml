@@ -1,0 +1,153 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container content">
+    <h1>Formulario de Reserva</h1>
+    <form id="reservationForm" method="post" action="#">
+        <div class="form-group">
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" placeholder="Ingrese su nombre completo" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaReserva">Fecha de Reserva</label>
+            <input type="date" class="form-control" id="fechaReserva" name="fechaReserva" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaSalida">Fecha de Salida</label>
+            <input type="date" class="form-control" id="fechaSalida" name="fechaSalida" required>
+        </div>
+        <div class="form-group">
+            <label for="cantidadAdultos">Cantidad de Adultos</label>
+            <input type="number" class="form-control" id="cantidadAdultos" name="cantidadAdultos" min="1" placeholder="Ingrese la cantidad de adultos" required>
+        </div>
+        <div class="form-group">
+            <label for="menores">¿Hay niños menores de 7 años?</label>
+            <input type="checkbox" id="menores" name="menores" onclick="toggleCantidadMenores()">
+        </div>
+        <div class="form-group" id="cantidadMenores" style="display: none;">
+            <label for="cantidadMenoresInput">Cantidad de Niños Menores de 7 años</label>
+            <input type="number" class="form-control" id="cantidadMenoresInput" name="cantidadMenores" min="1" placeholder="Ingrese la cantidad de niños">
+        </div>
+        <div class="form-group">
+            <label for="tipoReserva">Hotel</label>
+            <select class="form-control" id="tipoReserva" name="tipoReserva" required>
+                <option>Hotel El Panamá</option>
+                <option>Waldorf Astoria Panamá</option>
+                <option>Sortis Hotel, Spa & Casino</option>
+                <option>Bristol Panamá</option>
+                <option>Hilton Panamá</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="showSummary()">Confirmar Reserva</button>
+    </form>
+</div>
+
+<!-- Modal (Pop-up de confirmación) -->
+<div class="modal" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Resumen de la Reserva</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="summaryContent">
+                <!-- Contenido dinámico se generará aquí -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="goBackToForm()">Editar</button>
+                <button type="button" class="btn btn-primary" onclick="continueReservation()">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar u ocultar el campo de cantidad de menores
+    function toggleCantidadMenores() {
+        var cantidadMenoresField = document.getElementById("cantidadMenores");
+        var menoresCheckbox = document.getElementById("menores");
+
+        if (menoresCheckbox.checked) {
+            cantidadMenoresField.style.display = "block";
+        } else {
+            cantidadMenoresField.style.display = "none";
+        }
+    }
+
+    // Función para calcular los días y noches entre las fechas
+    function calculateDaysAndNights(fechaReserva, fechaSalida) {
+        const reservaDate = new Date(fechaReserva);
+        const salidaDate = new Date(fechaSalida);
+
+        const timeDifference = salidaDate - reservaDate;
+        const daysDifference = (timeDifference / (1000 * 3600 * 24)) + 1;
+        const nights = daysDifference > 1 ? daysDifference - 1 : 0;
+
+        return { days: daysDifference, nights: nights };
+    }
+
+    // Muestra el resumen de la reserva en el pop-up
+    function showSummary() {
+        const nombreCompleto = document.getElementById("nombreCompleto").value;
+        const fechaReserva = document.getElementById("fechaReserva").value;
+        const fechaSalida = document.getElementById("fechaSalida").value;
+        const cantidadAdultos = document.getElementById("cantidadAdultos").value;
+        const tipoReserva = document.getElementById("tipoReserva").value;
+
+        const { days, nights } = calculateDaysAndNights(fechaReserva, fechaSalida);
+
+        const cantidadMenores = document.getElementById("menores").checked
+            ? document.getElementById("cantidadMenoresInput").value
+            : "N/A";
+
+        const summaryHtml = `
+            <p><strong>Nombre Completo:</strong> ${nombreCompleto}</p>
+            <p><strong>Fecha de Reserva:</strong> ${fechaReserva}</p>
+            <p><strong>Fecha de Salida:</strong> ${fechaSalida}</p>
+            <p><strong>Cantidad de Adultos:</strong> ${cantidadAdultos}</p>
+            <p><strong>Cantidad de Niños Menores de 7 años:</strong> ${cantidadMenores}</p>
+            <p><strong>Hotel Seleccionado:</strong> ${tipoReserva}</p>
+            <p><strong>Días de Estancia:</strong> ${days} días</p>
+            <p><strong>Noches de Estancia:</strong> ${nights} noches</p>
+        `;
+
+        document.getElementById("summaryContent").innerHTML = summaryHtml;
+
+        var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        myModal.show();
+    }
+
+    // Redirige a la página de elección de la recámara
+    function continueReservation() {
+        const tipoReserva = document.getElementById("tipoReserva").value;
+        let url;
+
+        switch (tipoReserva) {
+            case "Hotel El Panamá":
+                url = "/Reservas/Recamara?hotel=El Panamá";
+                break;
+            case "Waldorf Astoria Panamá":
+                url = "/Reservas/Recamara?hotel=Waldorf";
+                break;
+            case "Sortis Hotel, Spa & Casino":
+                url = "/Reservas/Recamara?hotel=Sortis";
+                break;
+            case "Bristol Panamá":
+                url = "/Reservas/Recamara?hotel=Bristol";
+                break;
+            case "Hilton Panamá":
+                url = "/Reservas/Recamara?hotel=Hilton";
+                break;
+        }
+
+        window.location.href = url;
+    }
+
+    // Redirige al formulario para editar
+    function goBackToForm() {
+        window.location.href = "/Reservas";
+    }
+</script>

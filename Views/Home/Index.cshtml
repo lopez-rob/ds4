@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Si el layout está en otro lugar
+}
+
+<!-- Carrusel de imágenes estilo "marquee" -->
+<div style="width: 100%; overflow: hidden; background-color: #F7F3E3; padding: 3px;">
+    <marquee behavior="scroll" direction="left" scrollamount="25" style="display: flex; gap: 1px; align-items: center;">
+        <img src="~/Assets/riu.jpg" style="height: 100px; width: auto;" alt="Riu">
+        <img src="~/Assets/waldorf.jpg" style="height: 100px; width: auto;" alt="Waldorf">
+        <img src="~/Assets/bristol.jpg" style="height: 100px; width: auto;" alt="Bristol">
+        <img src="~/Assets/sortis.jpg" style="height: 100px; width: auto;" alt="Sortis">
+        <img src="~/Assets/6.jpg" style="height: 100px; width: auto;" alt="Image 6">
+        <img src="~/Assets/5.jpg" style="height: 100px; width: auto;" alt="Image 5">
+        <img src="~/Assets/4.jpg" style="height: 100px; width: auto;" alt="Image 4">
+        <img src="~/Assets/3.jpg" style="height: 100px; width: auto;" alt="Image 3">
+        <img src="~/Assets/2.jpg" style="height: 100px; width: auto;" alt="Image 2">
+        <img src="~/Assets/1.jpg" style="height: 100px; width: auto;" alt="Image 1">
+    </marquee>
+</div>
+
+
+
+<div class="container content">
+    <h2>Bienvenido a ReserViento</h2>
+    <div class="welcome-text">
+        <p><strong>¡Bienvenidos a ReserViento, el Sistema Integral de Reservaciones en Línea diseñado para optimizar y simplificar la gestión de tus reservas!</strong></p>
+        <p>Con ReserViento, podrás:</p>
+        <ul>
+            <li>Gestionar y organizar tus reservas de manera eficiente: Desde el primer paso hasta la confirmación final, nuestro sistema se adapta a tus necesidades.</li>
+            <li>Elegir entre diferentes opciones de servicios: Ya sea para eventos, alojamiento, o cualquier tipo de reserva que necesites, ReserViento te ofrece una variedad de opciones.</li>
+            <li>Disfrutar de un proceso rápido y seguro: Con nuestra plataforma intuitiva y de fácil uso, puedes hacer tus reservas de manera rápida, sin complicaciones, y con total seguridad.</li>
+            <li>Tener acceso a información en tiempo real: Conoce el estado de tus reservas y realiza modificaciones cuando lo necesites.</li>
+        </ul>
+        <p>¡Haz que cada reserva sea más fácil con ReserViento! Ya sea que busques eficiencia, flexibilidad o comodidad, estamos aquí para hacerlo realidad.</p>
+    </div>
+
+    <div class="btn-container">
+        <a href="/Reservas" class="btn btn-primary">Realizar Reserva</a>
+    </div>
+</div>
